@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App del Clima</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container horizontal-layout">
+        <h1>App del Clima</h1>
+        
+        <div class="app-content">
+            <div class="left-panel">
+                <div class="search-container">
+                    <div class="input-group">
+                        <label for="city-input">Ciudad</label>
+                        <input type="text" id="city-input" placeholder="Ingresa una ciudad...">
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="country-input">País</label>
+                        <select id="country-input">
+                            <option value="">Seleccionar país (opcional)</option>
+                            <option value="AR">Argentina</option>
+                            <option value="BO">Bolivia</option>
+                            <option value="BR">Brasil</option>
+                            <option value="CL">Chile</option>
+                            <option value="CO">Colombia</option>
+                            <option value="CR">Costa Rica</option>
+                            <option value="CU">Cuba</option>
+                            <option value="DO">República Dominicana</option>
+                            <option value="EC">Ecuador</option>
+                            <option value="SV">El Salvador</option>
+                            <option value="ES">España</option>
+                            <option value="GT">Guatemala</option>
+                            <option value="HN">Honduras</option>
+                            <option value="MX">México</option>
+                            <option value="NI">Nicaragua</option>
+                            <option value="PA">Panamá</option>
+                            <option value="PY">Paraguay</option>
+                            <option value="PE">Perú</option>
+                            <option value="PR">Puerto Rico</option>
+                            <option value="UY">Uruguay</option>
+                            <option value="US">Estados Unidos</option>
+                            <option value="VE">Venezuela</option>
+                            <option value="FR">Francia</option>
+                            <option value="DE">Alemania</option>
+                            <option value="IT">Italia</option>
+                            <option value="PT">Portugal</option>
+                            <option value="GB">Reino Unido</option>
+                        </select>
+                    </div>
+                    
+                    <button id="search-btn"><i class="fas fa-search"></i> Buscar</button>
+                </div>
+                
+                <div class="recent-searches" id="recent-searches">
+                </div>
+                
+                <div class="error-message" id="error-message"></div>
+            </div>
+            
+            <div class="right-panel">
+                <div class="weather-info" id="weather-info">
+                    <div class="city-name" id="city-name"></div>
+                    
+                    <div class="weather-icon">
+                        <img id="weather-icon" src="" alt="Icono del clima">
+                    </div>
+                    
+                    <div class="temperature" id="temperature"></div>
+                    
+                    <div class="description" id="description"></div>
+                    
+                    <div class="details">
+                        <div class="detail">
+                            <i class="fas fa-tint"></i>
+                            <span id="humidity"></span>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-wind"></i>
+                            <span id="wind-speed"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
